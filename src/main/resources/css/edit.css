@@ -1,0 +1,78 @@
+/* GWT edit mode correction */
+.gwt-body-edit {
+    background-color:#fff;
+    background-image:url("../img/body-bg.png");
+}
+ul.x-tab-strip , ul.x-tab-strip-wrap {
+    margin: 0;
+    pading:0;
+}
+.x-fieldset legend {
+    margin: 0;
+    pading:0;
+    border: none;
+    width: auto;
+}
+.x-panel-fbar {
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+.x-form-focus,.x-form-field:focus {
+    -moz-transition: none;
+    background-color: #FFFFFF;
+    border: 1px solid #B5B8C8;
+    box-shadow: none !important;
+    transition: none !important;
+    margin-bottom: 0;
+}
+
+input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+    cursor: pointer;
+    background-color: #fff;
+}
+span.x-tree3-node-text {
+    top: 2px;
+}
+.x-small-editor .x-form-text, .x-form-field  {
+    margin-bottom: 0 !important;
+}
+.x-form-item-label {
+    font-size: 11px;
+}
+.x-form-field,.x-form-text {
+    border-radius: 0 !important;
+    font-size: 12px; !important;
+    padding: 1px !important;
+}
+.x-btn-image{
+    top: 0 !important;
+}
+.gwt-Label {
+    padding-left: 5px;
+}
+.gwt-Image.x-component {
+    max-width: none;
+}
+
+/* cke edit mode correction */
+.cke_tpl_preview_img {
+    width: 100%;
+}
+.cke_tpl_preview_img img {
+    max-width:none;
+}
+
+/* Template edit mode correction */
+.bodywrapper .pageTitleHidden {
+     position:relative;
+     left:0;
+     text-indent:0;
+     line-height:normal;
+     background-color:#eaeaea;
+     border-bottom: 4px solid #333;
+}
+
+.carousel li , .carousel li p{
+	overflow:hidden;
+	list-style:none;
+}

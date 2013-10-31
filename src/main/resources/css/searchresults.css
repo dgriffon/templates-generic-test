@@ -1,0 +1,67 @@
+/******************************************************************************
+*  Template search results
+******************************************************************************/
+.search-name,.search-scope {
+    color: #39f;
+}
+.results-found {
+    border: 1px solid #eaeaea;
+    padding: 30px;
+    margin: 15px 0;
+    font-size: 36px;
+    text-align: center;
+    color: #39f;
+    line-height: 36px;
+
+}
+.results-found span {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    color: #ccc;
+    text-transform: uppercase;
+}
+.bodywrapper  .searchHighlightedText {
+	background:#FFFF00 none repeat scroll 0 0;
+	font-size:larger;
+	font-weight:bold;
+}
+
+.bodywrapper .resultsList ol {
+	margin:1em 1em 1em 3em;
+}
+.bodywrapper .resultsList li {
+	margin-bottom:1em;
+	padding: 0.5em 0 1em 0;
+	border-bottom:1px solid #eaeaea;
+	list-style:decimal
+}
+
+.bodywrapper .resultsList h3 {
+	display: none;
+}
+	
+.bodywrapper .resultsList h4 {
+	margin:0;
+	padding: 0;
+	border-bottom:none;
+}
+.bodywrapper .resultsList .resultslistDesc {
+
+}
+.bodywrapper .resultsList .resultsListFileType {
+	display:inline;
+	background-color:#FFE45C ;
+	border:1px solid #FED22F;
+	font-size-adjust:none;
+	padding:1px 8px;
+	text-align:center;
+	vertical-align:middle;
+	width:auto;
+}
+.bodywrapper .resultsList .resultsListDate {
+	font-size:80%;
+	color:#333;
+	display:inline;
+	margin:0 0.2em;
+}

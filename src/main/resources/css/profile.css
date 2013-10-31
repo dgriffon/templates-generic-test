@@ -1,0 +1,101 @@
+.profile-section-header  {
+    border-bottom: 1px solid #eaeaea;
+    margin-top: -15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom:15px;
+    text-shadow:rgba(0, 0, 0, 0.701961) 0 1px;
+    color: #fff;
+}
+.profile-section-header h1,.profile-section-header .lead {
+    text-shadow:rgba(0, 0, 0, 0.701961) 0 1px;
+    color: #fff;
+}
+
+.profile-section-header .img-profile {
+    margin: 0 auto;
+    text-align: center;
+}
+.profile-section-header .img-profile img {
+      max-width: 250px;
+    width: 100%;
+      border: 2px solid #000;
+}
+.profile-section-header .box-profile {
+    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+    background: rgba(255, 255, 255, .5);
+    padding: 15px;
+    border: 1px solid #fff;
+    margin-bottom: 15px;
+}
+.profile-section-header .box-profile p, .profile-section-header .box-profile blockquote {
+    margin-bottom: 0;
+}
+.profile-section-header .box-profile blockquote small {
+    color: #fff;
+    font-weight: bold;
+}
+.profile_social_media_wrapper {
+    display: inline-block;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.profile_social_media_wrapper a {
+    background: none repeat scroll 0 0 #39f;
+    border-radius: 500px 500px 500px 500px;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 24px;
+    height: 24px;
+    margin: 0 3px;
+    padding: 6px;
+    text-align: center;
+    transition: all 100ms linear 0s;
+    width: 24px;
+}
+.profile_social_media_wrapper a:hover, .profile_social_media_wrapper a:active {
+    background: none repeat scroll 0 0 #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.media a.media-icon {
+    border-radius: 500px 500px 500px 500px;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 48px;
+    height: 48px;
+    margin: 0 3px;
+    padding: 6px;
+    text-align: center;
+    transition: all 100ms linear 0s;
+    width: 48px;
+}
+.media a.media-icon:hover, .media a.media-icon:active {
+    color: #fff;
+    text-decoration: none;
+}
+.media-title {
+    color: #fff;
+    background-color: #39f;
+    border-top: 4px solid #0064cd;
+    padding: 5px;
+    margin-top: 0;
+}
+.media-title small {
+    color: #fff;
+}
+.box-profile2 {
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    overflow-x:hidden;
+    position:relative;
+    vertical-align:top;
+    white-space:normal;
+    border: 1px solid #eaeaea;
+    padding: 15px;
+}

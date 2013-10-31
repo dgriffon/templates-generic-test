@@ -1,0 +1,378 @@
+/******************************************************************************
+* document-outline-1.1.war
+******************************************************************************/
+.bodywrapper #nav-outline > ul {
+    margin-bottom: 0;
+    list-style: none outside none;
+    margin-left: 0;
+    height:760px;
+    overflow-y:auto;
+    border:1px solid #999999;
+}
+.bodywrapper #nav-outline ul ul {
+    margin-bottom: 1em;
+    list-style: square;
+}
+
+.bodywrapper #nav-outline > ul > li {
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 5px;
+}
+
+.bodywrapper #nav-outline > ul > li > a {
+    padding: 3px 5px;
+    background-color: #efefe6;
+    display: block;
+    color: #333;
+    font-weight: bold;
+}
+
+.bodywrapper #nav-outline > ul > li > a:hover, .bodywrapper #nav-outline > li.active > a, .bodywrapper #nav-outline > li.active > a:hover {
+    color: #ffffff;
+    background-color: #333;
+    text-decoration: none;
+}
+
+/******************************************************************************
+*  Tables Pricing
+******************************************************************************/
+.bodywrapper .pricingtable{padding:1em;}
+.bodywrapper .pricingtable .col1{width:25%;}
+.bodywrapper .pricingtable .col2{width:25%;text-align:center;}
+.bodywrapper .pricingtable .col3{width:25%;text-align:center;}
+.bodywrapper .pricingtable .col4{width:25%;text-align:center;}
+
+.bodywrapper .pricingtable td.button-signup{padding:5px}
+.bodywrapper .pricingtable .button-signup a{background-color:#0099ff;border:1px solid #018dea;padding:4px 20px;color:#fff;font-weight:bold;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;text-shadow:#0065a9 0 1px 0; text-decoration:none}
+.bodywrapper .pricingtable .button-signup a:hover{background-color:#0066cc;}
+
+.bodywrapper .pricingtable th{ text-align:center;padding:7px 0;border-bottom:1px solid #ebeeef; font-size: 16px; margin-bottom: 0; padding-bottom: 5px; padding-left: 0; padding-right: 0; padding-top: 35px;text-align: center;
+    font-family:'Scada',Arial,"Helvetica Neue", Helvetica,sans-serif; color:#000;}
+.bodywrapper .pricingtable th.thgreen{ background-color:#b2e610;}
+.bodywrapper .pricingtable td.tfooter{text-align:center;padding:7px 0;border-bottom:1px solid #ebeeef; font-size: 16px; font-weight: bold; margin-bottom: 0; padding-bottom: 5px; padding-left: 0; padding-right: 0; padding-top: 5px;text-align: center;font-family:Georgia, "Times New Roman", Times, serif; font-style:italic; color:#000;}
+
+.bodywrapper .pricingtable td{text-align:center;padding:7px 0;border-bottom:1px solid #ebeeef;}
+.bodywrapper .pricingtable td.tdleft{border-left:1px solid #ebeeef;}
+.bodywrapper .pricingtable td.tdright{border-right:1px solid #ebeeef;}
+.bodywrapper .pricingtable td.tdgrey{background-color:#ebeeef;}
+
+.bodywrapper .pricingtable td.noborder{border:0;}
+.bodywrapper .pricingtable td.nopadding{padding:0;}
+
+.bodywrapper td.rowlabel{ color:#000;text-align:left;background-color:#ffffff;font-size:14px;}
+.bodywrapper td.rowlabel2{ color:#000; text-align:left;background-color:#ffffff;font-size:13px;}
+.bodywrapper td.rowlabel2head{ font-family:'Scada',Arial,"Helvetica Neue", Helvetica,sans-serif; color:#000; text-align:left;background-color:#ffffff;font-size:14px;height:50px;vertical-align:bottom;}
+
+.bodywrapper .greentext{color:green;font-weight:bold;}
+
+.bodywrapper td.highlightcol{background-color:#edfcb1;border-bottom:1px solid #ebeeef;}
+
+.bodywrapper .option{font-size:12px;color:#666;font-weight:normal;}
+
+/******************************************************************************
+*  RSS  feed 
+******************************************************************************/
+.bodywrapper h3.rssfeedjahiacom {
+    overflow:hidden;
+    float:right;
+    font-size: 14px;
+    line-height: normal;
+
+
+}
+.bodywrapper .rssfeedjahiacom a,
+.bodywrapper .rssfeedjahiacom a:link,
+.bodywrapper .rssfeedjahiacom a:visited{
+    background:url(../img/rss-medium.png) no-repeat 4px 50%;
+    background-color:#eaeaea;
+    padding:10px 20px 10px 45px;
+    color:#333;
+    text-decoration:none;
+    display:block;
+}
+.bodywrapper .rssfeedjahiacom a:hover,
+.bodywrapper .rssfeedjahiacom a:active {
+    background-color:#333;
+    color:#fff;
+}
+
+.bodywrapper  a.rssfeedjahiacomsmall,
+.bodywrapper  a.rssfeedjahiacomsmall:link,
+.bodywrapper  a.rssfeedjahiacomsmall:visited{
+    background:url(../img/rss-small.png) no-repeat 5px 50%;
+    background-color:#eaeaea;
+    padding:2px 2px 2px 25px;
+    color:#333;
+    font-weight:bold;
+    text-decoration:none;
+    display:block;
+    overflow:hidden;
+    float:left;
+    margin-top:5px;
+}
+.bodywrapper  a.rssfeedjahiacomsmall:hover,
+.bodywrapper  a.rssfeedjahiacomsmall:active {
+    background-color:#333;
+    color:#fff;
+}
+/******************************************************************************
+* Person portrait
+******************************************************************************/
+.bodywrapper div.personPhoto img {width:100px;}
+
+/******************************************************************************
+* Highlighted Label
+******************************************************************************/
+.highlighted-label {
+    background-color: #000;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #FFFFFF;
+    font-size: 9.75px;
+    font-weight: bold;
+    padding-bottom: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 1px;
+    text-transform: uppercase;
+    margin-right:0.5em;
+}
+.highlighted-blue{
+    background-color: #6699CC;
+}
+.highlighted-red {
+    background-color: #CC0033;
+}
+.highlighted-orange{
+    background-color: #CC6600;
+}
+.highlighted-purple{
+    background-color: #6666CC;
+}
+.highlighted-green {
+    background-color: #669900;
+}
+.highlighted-grey {
+    background-color: #333333;
+}
+/******************************************************************************
+* Fancybox
+******************************************************************************/
+img.fancybox { padding: 5px; background: white; border: 1px solid #ccc !important; margin: 7px 14px 7px 0; width: 160px; height: 100px; }
+img.fancybox2 { padding: 5px; background: white; border: 1px solid #ccc !important; margin: 7px 14px 7px 0; width: 320px; height: 200px; }
+img.fancybox3 { padding: 5px; background: white; border: 1px solid #ccc !important; margin: 7px 14px 7px 0; width: 240px; height: 240px; }
+
+
+.bodywrapper div.fancyLink   {
+    display:inline-block;
+    width:18px;
+    height:18px;
+    background: url(../img/fancylink.png) no-repeat top left;
+    margin:0 5px;
+    vertical-align:text-bottom;
+    cursor:pointer;
+}
+.bodywrapper div.fancyLink2   {
+    cursor:pointer;
+    display:inline-block;
+    text-decoration:underline;
+}
+.bodywrapper div.fancyLink span {
+    display:none;
+    cursor:pointer;
+}
+.bodywrapper div.fancyLinkArea {
+    cursor:pointer;
+}
+
+/******************************************************************************
+*  Blog
+******************************************************************************/
+.bodywrapper .addArticle a, .bodywrapper .addArticle a:link {
+    background:none;
+    background-color: #3399FF;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow:0;
+    color: #fff;
+    padding-left:10px;
+}
+.bodywrapper .addArticle a:hover, .bodywrapper .addArticle a:focus {
+    background-color:#0073e5;
+    color: #fff;
+}
+.bodywrapper #formPageEdit input#title {
+    width:95%;
+}
+.bodywrapper #formPageEdit textarea#description {
+    width:95%;
+}
+.bodywrapper h2.post-title {
+    line-height:  normal;
+}
+/* post date */
+.bodywrapper div.post-date {
+    background-image: none;
+    background-color:#3399FF;
+    color: #fff;
+    font-family:  normal;
+    padding-top: 0;
+    width: 70px;
+    height:70px;
+    line-height: normal;
+    font-size:2.2em;
+}
+.bodywrapper .post-resume {
+    clear:both;
+}
+.bodywrapper .post-tags {
+    margin-left:80px;
+}
+.bodywrapper p.post-info   {
+    color: #999999;
+    padding:0 !important;
+}
+.bodywrapper .post-date span {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    height: auto;
+    font-size:16px;
+    font-weight:normal;
+}
+.calendar {
+    margin-top: 26px;
+}
+/******************************************************************************
+*  Wiki
+******************************************************************************/
+.bodywrapper h4.boxwiki-title {
+    background:none;
+    background-color:#eee;
+    color: #333;
+    font-size: 1em;
+}
+/******************************************************************************
+* Forum
+******************************************************************************/
+.bodywrapper #forum-body .forum-box{
+    background:none;
+    border:1px solid #e5e5e5;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+}
+/* Forum user profil
+----------------------------------------*/
+.bodywrapper #forum-body div.box9 {
+    padding: 5px 10px;
+}
+.bodywrapper ul.list-forum-user-profil li {
+    border-bottom: 1px solid #fff;
+}
+.bodywrapper #forum-body blockquote p {
+    font-size: 14px;
+    line-height: 20px;
+}
+/* newTopicForm
+----------------------------------------*/
+
+.bodywrapper form#newTopicForm,
+.bodywrapper form.pageFormCreation {
+    margin:15px;
+}
+/* box style 1
+----------------------------------------*/
+.bodywrapper #forum-body .forum-box-style1 {
+    background:none;
+    background-color:#f5f5f5;
+}
+/* box style 2
+----------------------------------------*/
+.bodywrapper #forum-body .forum-box-style2 {
+    background:none;
+    background-color:#fff;
+}
+/* forum-buttons
+----------------------------------------*/
+.bodywrapper #forum-body .forum-buttons a,
+.bodywrapper #forum-body .forum-buttons a:link,
+.bodywrapper #forum-body .forum-buttons a:visited{
+    background:none;
+    background-color:#3399FF;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow: none;
+    padding-left: 10px;
+
+    -webkit-transition:none;
+    -moz-transition: none;
+    -o-transition:none;
+    transition: none;
+    text-shadow:none;
+    filter: dropshadow(none);
+}
+.bodywrapper #forum-body .forum-buttons a:hover,
+.bodywrapper #forum-body .forum-buttons a:active {
+    text-decoration:none;
+    color: #fff;
+    background:none;
+    background-color:#0073e5;
+}
+/******************************************************************************
+* Forum
+******************************************************************************/
+.bodywrapper .facetsList li {
+    background-image: none;
+}
+/******************************************************************************
+* Advanced Search Form
+******************************************************************************/
+.bodywrapper .advancedSearchForm label {
+    display:inline;
+}
+/******************************************************************************
+*  logo
+******************************************************************************/
+.bodywrapper #header h1,.bodywrapper #header h2 {
+    margin:0;
+    padding:0;
+    line-height:80%;
+}
+.bodywrapper #header a.logo {
+    margin:0;
+    padding:0;
+}
+.bodywrapper #header h1 span , .bodywrapper #header h2 span{
+    text-indent: -9999px;
+    float:left;
+    line-height:0;
+}
+/******************************************************************************
+*  pageTitleHidden
+******************************************************************************/
+.bodywrapper .pageTitleHidden {
+    position:absolute;
+    left:-9999px;
+    text-indent: -9999px;
+    line-height:0;
+}
+/******************************************************************************
+*  pagerdoc
+******************************************************************************/
+.bodywrapper .pagerdoc .pager {
+    margin:0;
+}

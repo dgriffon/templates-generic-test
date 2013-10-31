@@ -1,0 +1,23 @@
+.wrapper{ width:1180px;}
+
+.navbar .nav .dropdown-menu li a {
+    text-transform: uppercase;
+    background-color: #fff;
+    border-bottom: none;
+}
+.navbar .nav .dropdown-menu li a:hover,
+.navbar .nav .dropdown-menu li a:active {
+    background-color: #39f;
+    border-bottom: none;
+}
+.navbar .nav .dropdown-menu li.active a,
+.navbar .nav .dropdown-menu li.active a:hover {
+    background-color: #39f;
+    border-bottom: none;
+}
+.social_media_wrapper a:hover,
+.social_media_wrapper a:active {
+    text-decoration: none;
+    color: #39f;
+    background: #fff;
+}
