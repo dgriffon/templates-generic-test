@@ -40,7 +40,7 @@
         <configuration>
           <instructions>
             <Jahia-Module-Type>templatesSet</Jahia-Module-Type>
-            <Jahia-Depends>default,bootstrap-components,bootstrap,layout-generic-components</Jahia-Depends>
+            <Jahia-Depends>default,generic-components,bootstrap-components,bootstrap,layout-generic-components</Jahia-Depends>
           </instructions>
         </configuration>
       </plugin>

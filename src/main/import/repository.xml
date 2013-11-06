@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
     <modules jcr:primaryType="jnt:modules">
-        <generic-templates j:dependencies="bootstrap bootstrap-components default layout-generic-components"
+        <generic-templates j:dependencies="bootstrap bootstrap-components default generic-components layout-generic-components"
                          j:installedModules="generic-templates"
                          j:moduleType="templatesSet"
                          j:title="generic-templates"
@@ -31,7 +31,14 @@
                                              jcr:primaryType="jnt:bootstrapContainer">
                                         <header-top jcr:primaryType="jnt:contentList">
                                             <header-top-row fluid="true" jcr:primaryType="jnt:bootstrapRow">
-                                                <header-top-row-column jcr:primaryType="jnt:bootstrapColumn" offset="0" span="12"/>
+                                                <header-top-row-column jcr:primaryType="jnt:bootstrapColumn" offset="0" span="12">
+                                                    <header-top-row-column jcr:primaryType="jnt:contentList">
+                                                        <language-switch jcr:primaryType="jcomp:lang"/>
+                                                        <login jcr:primaryType="jcomp:login"/>
+                                                        <search-form jcr:primaryType="jcomp:searchForm"
+                                                    result="/modules/generic-templates/search-results"/>
+                                                </header-top-row-column>
+                                                </header-top-row-column>
                                             </header-top-row>
                                     </header-top>
                                     </header-top>
@@ -45,7 +52,11 @@
                                             <nav-container fluid="true" jcr:primaryType="jnt:bootstrapContainer">
                                                 <nav-container jcr:primaryType="jnt:contentList">
                                                     <nav-row fluid="true" jcr:primaryType="jnt:bootstrapRow">
-                                                        <nav-column jcr:primaryType="jnt:bootstrapColumn" offset="0" span="12"/>
+                                                        <nav-column jcr:primaryType="jnt:bootstrapColumn" offset="0" span="12">
+                                                            <nav-column jcr:primaryType="jnt:contentList">
+                                                                <navigation-menu jcr:primaryType="jlayout:navbar"/>
+                                                        </nav-column>
+                                                        </nav-column>
                                                     </nav-row>
                                             </nav-container>
                                             </nav-container>
@@ -111,6 +122,11 @@
                               jcr:primaryType="jnt:translation"
                               jcr:title="Home"/>
                 </home>
+                <search-results j:templateName="simple" jcr:primaryType="jnt:page">
+                    <j:translation_en jcr:language="en"
+                              jcr:primaryType="jnt:translation"
+                              jcr:title="Search results"/>
+                </search-results>
         </generic-templates>
     </modules>
 </content>
