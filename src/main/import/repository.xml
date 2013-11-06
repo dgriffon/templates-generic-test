@@ -99,6 +99,97 @@
                             </footer>
                             </footer>
                         </pagecontent>
+                        <documentation j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="Documentation"/>
+                        </documentation>
+                        <_x0031_-col j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="1 col"/>
+                        </_x0031_-col>
+                        <_x0033_-cols j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="3 cols"/>
+                        </_x0033_-cols>
+                        <_x0032_-cols j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="2 cols"/>
+                            <customer--partner j:applyOn=""
+                                     j:defaultTemplate="false"
+                                     j:hiddenTemplate="false"
+                                     jcr:primaryType="jnt:contentTemplate">
+                                <j:translation_en jcr:language="en"
+                                       jcr:primaryType="jnt:translation"
+                                       jcr:title="Customer / Partner"/>
+                            </customer--partner>
+                            <customer-detail j:applyOn=""
+                                   j:defaultTemplate="false"
+                                   j:hiddenTemplate="false"
+                                   jcr:primaryType="jnt:contentTemplate">
+                                <j:translation_en jcr:language="en"
+                                       jcr:primaryType="jnt:translation"
+                                       jcr:title="customer-detail"/>
+                            </customer-detail>
+                            <events j:applyOn=""
+                          j:defaultTemplate="false"
+                          j:hiddenTemplate="false"
+                          jcr:primaryType="jnt:contentTemplate">
+                                <j:translation_en jcr:language="en"
+                                       jcr:primaryType="jnt:translation"
+                                       jcr:title="events"/>
+                            </events>
+                            <news j:applyOn=""
+                        j:defaultTemplate="false"
+                        j:hiddenTemplate="false"
+                        jcr:primaryType="jnt:contentTemplate">
+                                <j:translation_en jcr:language="en"
+                                       jcr:primaryType="jnt:translation"
+                                       jcr:title="news"/>
+                            </news>
+                            <news--buzz--event j:applyOn=""
+                                     j:defaultTemplate="false"
+                                     j:hiddenTemplate="false"
+                                     jcr:primaryType="jnt:contentTemplate">
+                                <j:translation_en jcr:language="en"
+                                       jcr:primaryType="jnt:translation"
+                                       jcr:title="News / Buzz / Event"/>
+                            </news--buzz--event>
+                            <partner-detail j:applyOn=""
+                                  j:defaultTemplate="false"
+                                  j:hiddenTemplate="false"
+                                  jcr:primaryType="jnt:contentTemplate">
+                                <j:translation_en jcr:language="en"
+                                       jcr:primaryType="jnt:translation"
+                                       jcr:title="partner detail"/>
+                            </partner-detail>
+                            <news--buzz--event-list j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                                <j:translation_en jcr:language="en"
+                                       jcr:primaryType="jnt:translation"
+                                       jcr:title="News / Buzz / Event List"/>
+                            </news--buzz--event-list>
+                        </_x0032_-cols>
+                        <_x0032_-cols-with-banner j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="2 cols with banner"/>
+                        </_x0032_-cols-with-banner>
+                        <_x0032_-cols-with-menu-on-right j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="2 cols with menu on right"/>
+                        </_x0032_-cols-with-menu-on-right>
+                        <user-profile j:applyOn="jnt:user"
+                             j:defaultTemplate="true"
+                             j:hiddenTemplate="false"
+                             jcr:primaryType="jnt:contentTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="user-profile"/>
+                        </user-profile>
                 </base>
                     <content-template j:applyOn="jnt:content"
                               j:hiddenTemplate="true"
