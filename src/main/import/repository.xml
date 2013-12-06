@@ -2,222 +2,176 @@
 <content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
     <modules jcr:primaryType="jnt:modules">
         <generic-templates j:dependencies="bootstrap bootstrap-components default generic-components layout-generic-components"
-                         j:installedModules="generic-templates"
-                         j:moduleType="templatesSet"
-                         j:title="generic-templates"
-                         jcr:primaryType="jnt:module">
-                
+                           j:installedModules="generic-templates"
+                           j:moduleType="templatesSet"
+                           j:title="generic-templates"
+                           jcr:primaryType="jnt:module">
+
             <templates jcr:primaryType="jnt:templatesFolder">
                 <files jcr:primaryType="jnt:folder">
                     <themes jcr:primaryType="jnt:folder">
-                            <default jcr:primaryType="jnt:folder"/>
+                        <default jcr:primaryType="jnt:folder"/>
                     </themes>
                 </files>
                 <contents jcr:primaryType="jnt:contentFolder"/>
-                    <base j:theme="/modules/generic-templates/templates/files/themes/default"
-                  j:view="generic-templates"
-                  jcr:mixinTypes="jmix:theme"
-                  jcr:primaryType="jnt:template">
-                    <home jcr:primaryType="jnt:pageTemplate"/>
-                    <simple jcr:primaryType="jnt:pageTemplate"/>
-                        <pagecontent jcr:primaryType="jnt:contentList">
-                            <header jcr:primaryType="jlayout:section" sectionElement="header">
-                                <header jcr:primaryType="jnt:contentList">
-                                    <header-top fluid="true"
-                                             j:classname="header-top-content"
-                                             j:id="header-top"
-                                             j:skin="skins.custom"
-                                             jcr:mixinTypes="jmix:customSkin jmix:skinnable"
-                                             jcr:primaryType="jnt:bootstrapContainer">
-                                        <header-top jcr:primaryType="jnt:contentList">
-                                            <header-top-row fluid="true" jcr:primaryType="jnt:bootstrapRow">
-                                                <header-top-row-column jcr:primaryType="jnt:bootstrapColumn" offset="0" span="12">
-                                                    <header-top-row-column jcr:primaryType="jnt:contentList">
-                                                        <language-switch jcr:primaryType="jcomp:lang"/>
-                                                        <login jcr:primaryType="jcomp:login"/>
-                                                        <search-form jcr:primaryType="jcomp:searchForm"
-                                                    result="/modules/generic-templates/search-results"/>
-                                                </header-top-row-column>
-                                                </header-top-row-column>
-                                            </header-top-row>
-                                    </header-top>
-                                    </header-top>
-                                    <nav fluid="true"
-                                             j:classname="navbar"
-                                             j:id="nav"
-                                             j:skin="skins.custom"
-                                             jcr:mixinTypes="jmix:customSkin jmix:skinnable"
-                             jcr:primaryType="jnt:bootstrapContainer">
-                                        <nav jcr:primaryType="jnt:contentList">
-                                            <nav-container fluid="true" jcr:primaryType="jnt:bootstrapContainer">
-                                                <nav-container jcr:primaryType="jnt:contentList">
-                                                    <nav-row fluid="true" jcr:primaryType="jnt:bootstrapRow">
-                                                        <nav-column jcr:primaryType="jnt:bootstrapColumn" offset="0" span="12">
-                                                            <nav-column jcr:primaryType="jnt:contentList">
-                                                                <navigation-menu jcr:primaryType="jlayout:navbar"/>
-                                                        </nav-column>
-                                                        </nav-column>
-                                                    </nav-row>
-                                            </nav-container>
-                                            </nav-container>
-                                    </nav>
-                                    </nav>
-                            </header>
-                            </header>
-                            <pagecontent j:allowedTypes="" jcr:primaryType="jnt:area"/>
-                            <footer jcr:primaryType="jlayout:section" sectionElement="footer">
-                                <footer jcr:primaryType="jnt:contentList">
-                                    <action cssClassName="section-call-for-action"
-                                jcr:primaryType="jlayout:section"
-                                sectionElement="section">
-                                        <action jcr:primaryType="jnt:contentList">
-                                    <action-container fluid="true" jcr:primaryType="jnt:bootstrapContainer">
-                                        <action-container jcr:primaryType="jnt:contentList">
-                                            <action-row fluid="true" jcr:primaryType="jnt:bootstrapRow">
-                                                        <action-column-left jcr:primaryType="jnt:bootstrapColumn" offset="0" span="4"/>
-                                                        <action-column-center jcr:primaryType="jnt:bootstrapColumn" offset="0" span="4"/>
-                                                        <action-column-right jcr:primaryType="jnt:bootstrapColumn" offset="0" span="4"/>
-                                            </action-row>
-                                    </action-container>
-                                    </action-container>
-                                    </action>
-                                    </action>
-                                    <copyright cssClassName="copyright"
-                                   jcr:primaryType="jlayout:section"
-                                   sectionElement="section">
-                                        <copyright jcr:primaryType="jnt:contentList">
-                                            <copyright-container fluid="true" jcr:primaryType="jnt:bootstrapContainer">
-                                                <copyright-container jcr:primaryType="jnt:contentList">
-                                                    <copyright-row fluid="true" jcr:primaryType="jnt:bootstrapRow">
-                                                        <copyright-column-left jcr:primaryType="jnt:bootstrapColumn" offset="0" span="6"/>
-                                                        <copyright-column-right jcr:primaryType="jnt:bootstrapColumn" offset="0" span="6"/>
-                                                    </copyright-row>
-                                            </copyright-container>
-                                            </copyright-container>
-                                    </copyright>
-                                    </copyright>
-                            </footer>
-                            </footer>
-                        </pagecontent>
-                        <documentation j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
-                            <j:translation_en jcr:language="en"
-                                    jcr:primaryType="jnt:translation"
-                                    jcr:title="Documentation"/>
-                        </documentation>
-                        <_x0031_-col j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
-                            <j:translation_en jcr:language="en"
-                                    jcr:primaryType="jnt:translation"
-                                    jcr:title="1 col"/>
-                        </_x0031_-col>
-                        <_x0033_-cols j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
-                            <j:translation_en jcr:language="en"
-                                    jcr:primaryType="jnt:translation"
-                                    jcr:title="3 cols"/>
-                        </_x0033_-cols>
-                        <_x0032_-cols j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
-                            <j:translation_en jcr:language="en"
-                                    jcr:primaryType="jnt:translation"
-                                    jcr:title="2 cols"/>
-                            <customer--partner j:applyOn=""
-                                     j:defaultTemplate="false"
-                                     j:hiddenTemplate="false"
-                                     jcr:primaryType="jnt:contentTemplate">
-                                <j:translation_en jcr:language="en"
-                                       jcr:primaryType="jnt:translation"
-                                       jcr:title="Customer / Partner"/>
-                            </customer--partner>
-                            <customer-detail j:applyOn=""
-                                   j:defaultTemplate="false"
-                                   j:hiddenTemplate="false"
-                                   jcr:primaryType="jnt:contentTemplate">
-                                <j:translation_en jcr:language="en"
-                                       jcr:primaryType="jnt:translation"
-                                       jcr:title="customer-detail"/>
-                            </customer-detail>
-                            <events j:applyOn=""
-                          j:defaultTemplate="false"
-                          j:hiddenTemplate="false"
-                          jcr:primaryType="jnt:contentTemplate">
-                                <j:translation_en jcr:language="en"
-                                       jcr:primaryType="jnt:translation"
-                                       jcr:title="events"/>
-                            </events>
-                            <news j:applyOn=""
-                        j:defaultTemplate="false"
-                        j:hiddenTemplate="false"
-                        jcr:primaryType="jnt:contentTemplate">
-                                <j:translation_en jcr:language="en"
-                                       jcr:primaryType="jnt:translation"
-                                       jcr:title="news"/>
-                            </news>
-                            <news--buzz--event j:applyOn=""
-                                     j:defaultTemplate="false"
-                                     j:hiddenTemplate="false"
-                                     jcr:primaryType="jnt:contentTemplate">
-                                <j:translation_en jcr:language="en"
-                                       jcr:primaryType="jnt:translation"
-                                       jcr:title="News / Buzz / Event"/>
-                            </news--buzz--event>
-                            <partner-detail j:applyOn=""
-                                  j:defaultTemplate="false"
-                                  j:hiddenTemplate="false"
+                <content-template j:applyOn="jnt:content"
+                                  j:hiddenTemplate="true"
+                                  j:priority="1"
+                                  j:view="generic-templates"
                                   jcr:primaryType="jnt:contentTemplate">
-                                <j:translation_en jcr:language="en"
-                                       jcr:primaryType="jnt:translation"
-                                       jcr:title="partner detail"/>
-                            </partner-detail>
-                            <news--buzz--event-list j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
-                                <j:translation_en jcr:language="en"
-                                       jcr:primaryType="jnt:translation"
-                                       jcr:title="News / Buzz / Event List"/>
-                            </news--buzz--event-list>
-                        </_x0032_-cols>
-                        <_x0032_-cols-with-banner j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
-                            <j:translation_en jcr:language="en"
-                                    jcr:primaryType="jnt:translation"
-                                    jcr:title="2 cols with banner"/>
-                        </_x0032_-cols-with-banner>
-                        <_x0032_-cols-with-menu-on-right j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
-                            <j:translation_en jcr:language="en"
-                                    jcr:primaryType="jnt:translation"
-                                    jcr:title="2 cols with menu on right"/>
-                        </_x0032_-cols-with-menu-on-right>
-                        <user-profile j:applyOn="jnt:user"
-                             j:defaultTemplate="true"
-                             j:hiddenTemplate="false"
-                             jcr:primaryType="jnt:contentTemplate">
-                            <j:translation_en jcr:language="en"
-                                    jcr:primaryType="jnt:translation"
-                                    jcr:title="user-profile"/>
-                        </user-profile>
-                </base>
-                    <content-template j:applyOn="jnt:content"
-                              j:hiddenTemplate="true"
-                              j:priority="1"
-                              j:view="generic-templates"
-                              jcr:primaryType="jnt:contentTemplate">
                     <pagecontent jcr:primaryType="jnt:contentList">
-                            <main-resource-display j:mainResourceView="default" jcr:primaryType="jnt:mainResourceDisplay"/>
+                        <main-resource-display j:mainResourceView="default" jcr:primaryType="jnt:mainResourceDisplay"/>
                     </pagecontent>
                 </content-template>
+                <base j:theme="/modules/generic-templates/templates/files/themes/default"
+                      j:view="generic-templates"
+                      jcr:mixinTypes="jmix:theme"
+                      jcr:primaryType="jnt:template">
+                    <home jcr:primaryType="jnt:pageTemplate"/>
+                    <simple jcr:primaryType="jnt:pageTemplate"/>
+                    <documentation j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                        <j:translation_en jcr:language="en"
+                                          jcr:mixinTypes="mix:title"
+                                          jcr:primaryType="jnt:translation"
+                                          jcr:title="Documentation"/>
+                    </documentation>
+                    <_x0031_-col j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                        <j:translation_en jcr:language="en"
+                                          jcr:mixinTypes="mix:title"
+                                          jcr:primaryType="jnt:translation"
+                                          jcr:title="1 col"/>
+                    </_x0031_-col>
+                    <_x0033_-cols j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                        <j:translation_en jcr:language="en"
+                                          jcr:mixinTypes="mix:title"
+                                          jcr:primaryType="jnt:translation"
+                                          jcr:title="3 cols"/>
+                    </_x0033_-cols>
+                    <_x0032_-cols j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                        <j:translation_en jcr:language="en"
+                                          jcr:mixinTypes="mix:title"
+                                          jcr:primaryType="jnt:translation"
+                                          jcr:title="2 cols"/>
+                        <customer--partner j:applyOn=""
+                                           j:defaultTemplate="false"
+                                           j:hiddenTemplate="false"
+                                           jcr:primaryType="jnt:contentTemplate">
+                            <j:translation_en jcr:language="en"
+                                              jcr:mixinTypes="mix:title"
+                                              jcr:primaryType="jnt:translation"
+                                              jcr:title="Customer / Partner"/>
+                        </customer--partner>
+                        <customer-detail j:applyOn=""
+                                         j:defaultTemplate="false"
+                                         j:hiddenTemplate="false"
+                                         jcr:primaryType="jnt:contentTemplate">
+                            <j:translation_en jcr:language="en"
+                                              jcr:mixinTypes="mix:title"
+                                              jcr:primaryType="jnt:translation"
+                                              jcr:title="customer-detail"/>
+                        </customer-detail>
+                        <events j:applyOn=""
+                                j:defaultTemplate="false"
+                                j:hiddenTemplate="false"
+                                jcr:primaryType="jnt:contentTemplate">
+                            <j:translation_en jcr:language="en"
+                                              jcr:mixinTypes="mix:title"
+                                              jcr:primaryType="jnt:translation"
+                                              jcr:title="events"/>
+                        </events>
+                        <news j:applyOn=""
+                              j:defaultTemplate="false"
+                              j:hiddenTemplate="false"
+                              jcr:primaryType="jnt:contentTemplate">
+                            <j:translation_en jcr:language="en"
+                                              jcr:mixinTypes="mix:title"
+                                              jcr:primaryType="jnt:translation"
+                                              jcr:title="news"/>
+                        </news>
+                        <news--buzz--event j:applyOn=""
+                                           j:defaultTemplate="false"
+                                           j:hiddenTemplate="false"
+                                           jcr:primaryType="jnt:contentTemplate">
+                            <j:translation_en jcr:language="en"
+                                              jcr:mixinTypes="mix:title"
+                                              jcr:primaryType="jnt:translation"
+                                              jcr:title="News / Buzz / Event"/>
+                        </news--buzz--event>
+                        <partner-detail j:applyOn=""
+                                        j:defaultTemplate="false"
+                                        j:hiddenTemplate="false"
+                                        jcr:primaryType="jnt:contentTemplate">
+                            <j:translation_en jcr:language="en"
+                                              jcr:mixinTypes="mix:title"
+                                              jcr:primaryType="jnt:translation"
+                                              jcr:title="partner detail"/>
+                        </partner-detail>
+                        <news--buzz--event-list j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                              jcr:mixinTypes="mix:title"
+                                              jcr:primaryType="jnt:translation"
+                                              jcr:title="News / Buzz / Event List"/>
+                        </news--buzz--event-list>
+                    </_x0032_-cols>
+                    <_x0032_-cols-with-banner j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                        <j:translation_en jcr:language="en"
+                                          jcr:mixinTypes="mix:title"
+                                          jcr:primaryType="jnt:translation"
+                                          jcr:title="2 cols with banner"/>
+                    </_x0032_-cols-with-banner>
+                    <_x0032_-cols-with-menu-on-right j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                        <j:translation_en jcr:language="en"
+                                          jcr:mixinTypes="mix:title"
+                                          jcr:primaryType="jnt:translation"
+                                          jcr:title="2 cols with menu on right"/>
+                    </_x0032_-cols-with-menu-on-right>
+                    <user-profile j:applyOn="jnt:user"
+                                  j:defaultTemplate="true"
+                                  j:hiddenTemplate="false"
+                                  jcr:primaryType="jnt:contentTemplate">
+                        <j:translation_en jcr:language="en"
+                                          jcr:mixinTypes="mix:title"
+                                          jcr:primaryType="jnt:translation"
+                                          jcr:title="user-profile"/>
+                    </user-profile>
+                    <header-top jcr:primaryType="jnt:contentList">
+                        <language-switch jcr:primaryType="jcomp:lang"/>
+                        <login jcr:primaryType="jcomp:login"/>
+                        <search-form jcr:primaryType="jcomp:searchForm"
+                                     result="/modules/generic-templates/search-results"/>
+                    </header-top>
+                    <header jcr:primaryType="jnt:contentList">
+                        <language-switch jcr:primaryType="jcomp:lang"/>
+                        <login jcr:primaryType="jcomp:login"/>
+                        <search-form jcr:primaryType="jcomp:searchForm"
+                                     result="/modules/generic-templates/search-results"/>
+                    </header>
+                    <header-nav jcr:primaryType="jnt:contentList">
+                        <navbar jcr:primaryType="jlayout:navbar"/>
+                    </header-nav>
+                    <page-content jcr:primaryType="jnt:contentList">
+                        <pagecontent j:allowedTypes="" jcr:primaryType="jnt:area"/>
+                    </page-content>
+                </base>
             </templates>
-                
-                <portlets jcr:primaryType="jnt:portletFolder"/>
-                <files jcr:primaryType="jnt:folder"/>
-                <contents jcr:primaryType="jnt:contentFolder"/>
-                <home j:isHomePage="true"
-               j:templateName="home"
-               jcr:primaryType="jnt:page">
-                    <j:translation_en jcr:language="en"
-                              jcr:mixinTypes="mix:title"
-                              jcr:primaryType="jnt:translation"
-                              jcr:title="Home"/>
-                </home>
-                <search-results j:templateName="simple" jcr:primaryType="jnt:page">
-                    <j:translation_en jcr:language="en"
-                              jcr:primaryType="jnt:translation"
-                              jcr:title="Search results"/>
-                </search-results>
+
+            <portlets jcr:primaryType="jnt:portletFolder"/>
+            <files jcr:primaryType="jnt:folder"/>
+            <contents jcr:primaryType="jnt:contentFolder"/>
+            <home j:isHomePage="true"
+                  j:templateName="home"
+                  jcr:primaryType="jnt:page">
+                <j:translation_en jcr:language="en"
+                                  jcr:mixinTypes="mix:title"
+                                  jcr:primaryType="jnt:translation"
+                                  jcr:title="Home"/>
+            </home>
+            <search-results j:templateName="simple" jcr:primaryType="jnt:page">
+                <j:translation_en jcr:language="en"
+                                  jcr:mixinTypes="mix:title"
+                                  jcr:primaryType="jnt:translation"
+                                  jcr:title="Search results"/>
+            </search-results>
         </generic-templates>
     </modules>
 </content>
