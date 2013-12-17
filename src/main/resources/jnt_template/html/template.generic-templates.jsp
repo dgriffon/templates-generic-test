@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="jcr" uri="http://www.jahia.org/tags/jcr" %>
+<%@ taglib prefix="bootstrap" uri="http://www.jahia.org/tags/bootstrapLib" %>
 <%--@elvariable id="currentNode" type="org.jahia.services.content.JCRNodeWrapper"--%>
 <%--@elvariable id="out" type="java.io.PrintWriter"--%>
 <%--@elvariable id="script" type="org.jahia.services.render.scripting.Script"--%>
@@ -54,7 +55,7 @@
     <template:addResources type="css" resources="prettify.css"/>
     <template:addResources type="javascript" resources="prettify.js,lang-css.js,"/>
 
-<%-- HTML5 shim, for IE6-8 support of HTML5 elements --%>
+    <%-- HTML5 shim, for IE6-8 support of HTML5 elements --%>
     <template:addResources type="javascript" resources="html5shiv.js" condition="if lt IE 9"/>
 
 
@@ -91,12 +92,75 @@
                            resources="bootstrap-button.js,bootstrap-collapse.js,bootstrap-carousel.js,bootstrap-typeahead.js"/>
 
     <template:addResources type="javascript" resources="holder.js,twitter-bootstrap-hover-dropdown.js,generic.js"/>
+    <bootstrap:addCSS/>
 </head>
 
 <body>
 
 <div class="wrapper bodywrapper">
+    <header>
+        <div class="header-top-content">
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <template:area path="header-top" areaAsSubNode="true"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <template:area path="header-nav" areaAsSubNode="true"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <template:area path="pagecontent" areaAsSubNode="true"/>
+
+    <footer>
+        <section class="section-call-for-action">
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span4">
+                        <template:area path="action-column-left" areaAsSubNode="true"/>
+                    </div>
+
+                    <div class="span4">
+                        <template:area path="action-column-center" areaAsSubNode="true"/>
+                    </div>
+
+                    <div class="span4">
+                        <template:area path="action-column-right" areaAsSubNode="true"/>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </section>
+        <section class="copyright">
+            <div class="container-fluid">
+                <div class="row-fluid">
+
+                    <div class="span6">
+                        <template:area path="copyright-column-left" areaAsSubNode="true"/>
+                    </div>
+
+                    <div class="span6">
+                        <template:area path="copyright-column-right" areaAsSubNode="true"/>
+                    </div>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </section>
+        <div class="clear"></div>
+    </footer>
 </div>
 
 <%-- Les styles old--%>
